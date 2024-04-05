@@ -41,10 +41,10 @@ function Home() {
         </div>
 
         <div className="container mx-auto">
-          <div className="grid  grid-cols-1 md:grid-cols-3 items-center m-2 md:m-20">
-            <div className="md:col-span-2">
-              <h1 className="h1 mb-8 font-bold text-[30px]">{data?.title}</h1>
-              <p>{data?.description}</p>
+          <div className="grid  grid-cols-1 md:grid-cols-3 items-center m-2 md:m-16">
+            <div className="md:col-span-2 text-white">
+              <h1 className="h1 mb-8 font-bold text-[30px] ">{data?.title}</h1>
+              <p >{data?.description}</p>
 
               <button class="p-2 rounded border-4 mt-10 btn-start mb-10 border-blue-800 bg-blue-800 text-white">
                 Mulai Konsultasi
@@ -63,9 +63,7 @@ function Home() {
                   <Typography className="mt-3 text-justify">
                     Tantang Dirimu, Terangi Masa Depanmu bersama Edunewtron:
                     Menginspirasi, Membangun, dan Mengubah Pendidikan untuk
-                    Generasi Mendatang dengan Teknologi Canggih. Menyajikan
-                    Pembelajaran Interaktif dan Inovatif, Mendorong Kemajuan
-                    Melalui Teknologi Terbaru untuk Membentuk Generasi Unggul.
+                    Generasi Mendatang dengan Teknologi Canggih.
                   </Typography>
                 </CardBody>
               </Card>
@@ -77,7 +75,11 @@ function Home() {
 
         {/*Section 2 */}
         <div className="container mx-auto mt-20">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <div className="m-20">
+          <h1 className="text-xl text-white font-bold mb-2">Playlist</h1>
+          <hr className="mb-6 w-16"/>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 -mt-10">
             {data?.playlist.map((item, key) => (
               <div key={key} className="w-auto">
                 <Card className=" w-96 h-60 grid grid-cols-1">
